@@ -452,6 +452,7 @@ img {
 .work__container {
   row-gap: 2rem;
   grid-template-columns: 1fr;
+  place-items: center;
 }
 .work__names {
   height: 200px;
@@ -465,7 +466,6 @@ img {
   align-items: center;
   padding: 0.5rem;
   transition: 0.5s;
-  margin-left: 1rem;
 }
 
 .work__names h6 {
