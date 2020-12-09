@@ -37,7 +37,7 @@ const Work = () => {
             <div>
               <h6>{title}</h6>
               <p>{subtitle}</p>
-              <a href={link} target="_blank" rel="noreferrer">
+              <a href={link} target="_blank" rel="noopener noreferrer">
                 Click to open
               </a>
             </div>

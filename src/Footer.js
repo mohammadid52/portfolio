@@ -21,7 +21,7 @@ const Footer = () => {
       <p className="footer__title">Mohammad</p>
       <div className="footer__social">
         {iconList.map(({ href, icon }) => (
-          <a href={href} className="footer__icon" rel="noreferrer" target="_blank">
+          <a href={href} className="footer__icon" rel="noopener noreferrer" target="_blank">
             {icon}
           </a>
         ))}

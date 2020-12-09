@@ -35,7 +35,7 @@ const Home = () => {
 
       <div className="home__social">
         {iconList.map(({ href, icon }) => (
-          <a href={href} target="_blank" rel="noreferrer" className="home__social-icon">
+          <a href={href} target="_blank" rel="noopener noreferrer" className="home__social-icon">
             {icon}
           </a>
         ))}
