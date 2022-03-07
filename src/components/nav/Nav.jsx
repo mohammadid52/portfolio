@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./nav.css";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineBook, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
+import { VscPreview } from "react-icons/vsc";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -38,6 +39,20 @@ const Nav = () => {
         href="#services"
       >
         <RiServiceLine />
+      </a>
+      <a
+        onClick={() => setActiveNav("#portfolio")}
+        className={isActive("#portfolio")}
+        href="#portfolio"
+      >
+        <AiOutlineBook />
+      </a>
+      <a
+        onClick={() => setActiveNav("#testimonials")}
+        className={isActive("#testimonials")}
+        href="#testimonials"
+      >
+        <VscPreview />
       </a>
       <a
         onClick={() => setActiveNav("#contact")}
