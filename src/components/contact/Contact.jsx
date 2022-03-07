@@ -1,11 +1,8 @@
-import React, { useRef } from "react";
-import "./contact.css";
-import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "emailjs-com";
-import Wrapper from "../Wrapper";
+import React, { useRef } from "react";
 import { contact } from "../../constants";
+import Wrapper from "../Wrapper";
+import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
