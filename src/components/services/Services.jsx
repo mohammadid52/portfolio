@@ -1,6 +1,7 @@
 import React from "react";
 import "./services.css";
 import { BiCheck } from "react-icons/bi";
+import Wrapper from "../Wrapper";
 
 const Service = ({ title }) => {
   return (
@@ -36,15 +37,10 @@ const Service = ({ title }) => {
 
 const Services = () => {
   return (
-    <section id="services">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
-
-      <div className="container services__container">
-        <Service title="UI/UX Design" />
-        <Service title="Web Development" />
-      </div>
-    </section>
+    <Wrapper id="services" header1="What I Offer" header2="Services">
+      <Service title="UI/UX Design" />
+      <Service title="Web Development" />
+    </Wrapper>
   );
 };
 

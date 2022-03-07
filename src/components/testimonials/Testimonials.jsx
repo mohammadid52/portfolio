@@ -1,10 +1,5 @@
 import React from "react";
 import "./testimonials.css";
-import AVATAR1 from "../../assets/1.jpg";
-import AVATAR2 from "../../assets/2.jpg";
-import AVATAR3 from "../../assets/3.jpg";
-import AVATAR4 from "../../assets/4.jpg";
-import AVATAR5 from "../../assets/5.jpg";
 
 // import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
@@ -15,44 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-const data = [
-  {
-    id: 1,
-    avatar: AVATAR1,
-    name: "Ernest Achiever",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adip is simply dummy,Lorem ipsum dolor sit amet, consectetur adip is simply dummy",
-  },
-  {
-    id: 2,
-    avatar: AVATAR2,
-    name: "Ernest Achiever",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adip is simply dummy,Lorem ipsum dolor sit amet, consectetur adip is simply dummy",
-  },
-  {
-    id: 3,
-    avatar: AVATAR3,
-    name: "Ernest Achiever",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adip is simply dummy,Lorem ipsum dolor sit amet, consectetur adip is simply dummy",
-  },
-  {
-    id: 4,
-    avatar: AVATAR4,
-    name: "Ernest Achiever",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adip is simply dummy,Lorem ipsum dolor sit amet, consectetur adip is simply dummy",
-  },
-  {
-    id: 5,
-    avatar: AVATAR5,
-    name: "Ernest Achiever",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adip is simply dummy,Lorem ipsum dolor sit amet, consectetur adip is simply dummy",
-  },
-];
+import { testimonials } from "../../constants";
 
 const Testimonials = () => {
   return (
@@ -68,7 +26,7 @@ const Testimonials = () => {
         pagination={{ clickable: true }}
         className="container testimonials__container"
       >
-        {data.map(({ avatar, name, review, id }) => (
+        {testimonials.map(({ avatar, name, review, id }) => (
           <SwiperSlide key={id} className="testimonial">
             <div className="client__avatar">
               <img src={avatar} alt="Avatar one" />
