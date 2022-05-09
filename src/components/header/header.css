@@ -65,8 +65,9 @@ header {
 /* Media Queries [Medium Devices] */
 
 @media screen and (max-width: 1024px) {
-  header {
-    height: 68vh;
+  .header__container .me {
+    width: 65%;
+    left: calc(50% - 9rem);
   }
 }
 /* Media Queries [Small Devices] */
@@ -78,5 +79,10 @@ header {
   .header__socials,
   .scroll__down {
     display: none;
+  }
+
+  .header__container .me {
+    left: calc(50% - 8rem);
+    width: 81%;
   }
 }

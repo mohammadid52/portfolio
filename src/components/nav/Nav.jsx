@@ -16,10 +16,16 @@ const Nav = () => {
 
   return (
     <nav>
-      <a onClick={() => setActiveNav("#")} className={isActive("#")} href="#">
+      <a
+        title={"Home"}
+        onClick={() => setActiveNav("#")}
+        className={isActive("#")}
+        href="#"
+      >
         <AiOutlineHome />
       </a>
       <a
+        title={"About"}
         onClick={() => setActiveNav("#about")}
         className={isActive("#about")}
         href="#about"
@@ -29,6 +35,7 @@ const Nav = () => {
       <a
         onClick={() => setActiveNav("#experience")}
         className={isActive("#experience")}
+        title={"Experience"}
         href="#experience"
       >
         <BiBook />
@@ -36,12 +43,14 @@ const Nav = () => {
       <a
         onClick={() => setActiveNav("#services")}
         className={isActive("#services")}
+        title={"Services"}
         href="#services"
       >
         <RiServiceLine />
       </a>
       <a
         onClick={() => setActiveNav("#portfolio")}
+        title={"Portfolio"}
         className={isActive("#portfolio")}
         href="#portfolio"
       >
@@ -50,6 +59,7 @@ const Nav = () => {
       <a
         onClick={() => setActiveNav("#testimonials")}
         className={isActive("#testimonials")}
+        title={"Testimonials"}
         href="#testimonials"
       >
         <VscPreview />
@@ -57,6 +67,7 @@ const Nav = () => {
       <a
         onClick={() => setActiveNav("#contact")}
         className={isActive("#contact")}
+        title={"Contact"}
         href="#contact"
       >
         <BiMessageSquareDetail />
