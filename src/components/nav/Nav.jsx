@@ -1,10 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import "./nav.css";
 import { AiOutlineBook, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { VscPreview } from "react-icons/vsc";
+
+const variants = {
+  hidden: {
+    opacity: 0,
+
+    transition: { delay: 1, duration: 1 },
+  },
+  show: {
+    opacity: 1,
+
+    transition: { delay: 1, duration: 1 },
+  },
+};
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -15,7 +29,7 @@ const Nav = () => {
   };
 
   return (
-    <nav>
+    <motion.nav initial="hidden" animate="show" variants={variants}>
       <a
         title={"Home"}
         onClick={() => setActiveNav("#")}
@@ -72,7 +86,7 @@ const Nav = () => {
       >
         <BiMessageSquareDetail />
       </a>
-    </nav>
+    </motion.nav>
   );
 };
 

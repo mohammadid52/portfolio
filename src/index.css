@@ -25,11 +25,16 @@
 
   /* Transition */
 
-  --transition: all 400ms ease;
+  --transition: all 150ms linear;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+input,
+textarea {
+  font-family: inherit;
 }
 
 body {
@@ -43,7 +48,23 @@ body {
     var(--color-bg-variant) 1.2000000000000002px,
     var(--color-bg) 1.2000000000000002px
   );
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   background-size: 24px 24px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--color-bg); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid var(--color-primary); /* creates padding around scroll thumb */
 }
 
 /* General Styles */

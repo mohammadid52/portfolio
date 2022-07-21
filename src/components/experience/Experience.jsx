@@ -3,6 +3,7 @@ import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 import Wrapper from "../Wrapper";
 import { skills } from "../../constants";
+import { Parallax } from "react-scroll-parallax";
 const Experience = () => {
   return (
     <Wrapper
@@ -24,6 +25,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
+
       <div className="experience__backend">
         <h3>Backend Development</h3>
         <div className="experience__content">

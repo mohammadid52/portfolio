@@ -2,6 +2,7 @@ import React from "react";
 import "./services.css";
 import { BiCheck } from "react-icons/bi";
 import Wrapper from "../Wrapper";
+import { Parallax } from "react-scroll-parallax";
 
 const Service = ({ title, services }) => {
   return (
@@ -37,11 +38,13 @@ const list2 = [
 
 const Services = () => {
   return (
-    <Wrapper id="services" header1="What I Offer" header2="Services">
-      <Service services={list1} title="UI/UX Design" />
+    <Parallax speed={-5}>
+      <Wrapper id="services" header1="What I Offer" header2="Services">
+        <Service services={list1} title="UI/UX Design" />
 
-      <Service services={list2} title="Web Development" />
-    </Wrapper>
+        <Service services={list2} title="Web Development" />
+      </Wrapper>
+    </Parallax>
   );
 };
 

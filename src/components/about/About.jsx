@@ -11,6 +11,7 @@ const About = () => {
           <img src={about.photo} alt="Mohammad Dehgamwala" />
         </div>
       </div>
+
       <div className="about__content">
         <div className="about__cards">
           {/* Experience */}
