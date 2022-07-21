@@ -1,10 +1,10 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
+import ME from "../../assets/me.png";
+import CTA from "./CTA";
 import "./header.css";
 import HeaderSocials from "./HeaderSocials";
-import CTA from "./CTA";
-import ME from "../../assets/me.png";
-import { motion } from "framer-motion";
-import { Parallax } from "react-scroll-parallax";
 
 export const xyVariants = (delay = 0) => {
   return {

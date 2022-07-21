@@ -1,9 +1,8 @@
 import React from "react";
-import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
-import Wrapper from "../Wrapper";
 import { skills } from "../../constants";
-import { Parallax } from "react-scroll-parallax";
+import Wrapper from "../Wrapper";
+import "./experience.css";
 const Experience = () => {
   return (
     <Wrapper

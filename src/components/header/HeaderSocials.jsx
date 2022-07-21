@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 import { socialLinks } from "../../constants";
 import { xyVariants } from "./Header";
 
